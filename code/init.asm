@@ -70,13 +70,16 @@
 					; 1: HIRAM 	= KERNAL ROM at $E000–$FFFF replaced by RAM
 					; 2: LORAM 	= Char ROM visible at $D000–$DFFF (I/O hidden)
 					;-------------------------------			
-					;              o- LORAM 
-					;		       |o- HIRAM
+					;              o--- LORAM 
+					;		       |o-- HIRAM
 					;              ||o- CHAREN
 					;              |||
 					;-------------------------------			
-						lda #%00000101		
+						lda #%00000111		
 						sta $01		
+						
+					;-------------------------------
+					; Setup IRQ
 					;-------------------------------			
 
 						cli

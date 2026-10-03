@@ -3,11 +3,11 @@
 ;-------------------------------
 ; Memory locations
 ;-------------------------------
-START       = $8009
 BASIC       = $0801 
 BITMASKS    = $0880
 SPRPTR		= $03f8		
-SCREEN		= $4000	
+SCREEN		= $0400	
+START       = $8009
 COLORRAM	= $d800
 ;-------------------------------		
 ; VIC BANK		
